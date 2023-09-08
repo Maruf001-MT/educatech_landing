@@ -1,0 +1,1 @@
+chrome-extension://kbfnbcaeplbcioakkpcpgfkobkghlhen/src/fonts/6519f1e21f257f3f/inter_Inter-Thin.woff
