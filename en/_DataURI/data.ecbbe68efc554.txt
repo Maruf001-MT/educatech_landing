@@ -1,0 +1,1 @@
+chrome-extension://kbfnbcaeplbcioakkpcpgfkobkghlhen/src/fonts/6d81660e339d23ed/inter_Inter-ExtraLight.woff
