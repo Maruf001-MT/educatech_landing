@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com -->
+<!-- Last Published: Fri Aug 11 2023 13:28:55 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="az-buenos-aires.webflow.io" data-wf-page="648971b262ab5785e5452d4b" data-wf-site="6453ce1cefcbb05dac8d9210">
 
 <head>
@@ -87,31 +89,6 @@
 </head>
 
 <body>
-
-<?php
-    if(!empty($_POST["submit"])){
-        $LastName = $_POST["LastName"];
-        $Email = $_POST["Email"];
-        $Message = $_POST["Message"];
-        $toEmail = "info@prozukty.com";
-
-        $mailHeaders = "Name: " . $LastName . 
-        "\r\n Email: " . $Email . 
-        "\r\n Message: " . $Message . "\r\n";
-
-        if(mail($toEmail, $LastName, $mailHeaders)){
-            $message = "Your information is received seccessfully.";
-        }
-
-    }
-
-?>
-
-
-
-
-
-
     <div class="page-wrapper">
         <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="e0b516b2-bf57-08a9-1f3c-0329245b60b9" role="banner" data-no-scroll="1" data-duration="500" data-doc-height="1">
             <div class="container nav-container">
@@ -178,24 +155,22 @@
                 </div>
                 <div id="w-node-_61c83c0c-10ec-2077-15d7-fead698a930e-e5452d4b" class="contact-form-holder">
                     <div class="contact-form w-form">
-                        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get" class="contact-form-content" data-wf-page-id="648971b262ab5785e5452d4b" data-wf-element-id="01b9e3e3-333e-e152-3ec1-d3a21e6c7775">
+                        <form id="wf-form-Contact-Form" action="mail.php" method="post" class="contact-form-content">
                             <div data-w-id="01b9e3e3-333e-e152-3ec1-d3a21e6c7776" style="opacity:0;-webkit-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="contact-form-grid">
                                 <div class="top-message-text">Send us a message</div>
-                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-e5452d4b" class="fade-in-move-on-scroll"><label for="LastName" id="contact-last-name" class="field-label">Your name *</label><input type="text" class="input-field w-input" maxlength="256" name="LastName" placeholder="" id="LastName" required=""
+                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-e5452d4b" class="fade-in-move-on-scroll"><label for="Name" id="contact-last-name" class="field-label">Your name *</label><input type="text" class="input-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" id="Name" required=""
                                     /></div>
-                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-e5452d4b" class="fade-in-move-on-scroll"><label for="Email-3" id="contact-email" class="field-label">Email *</label><input type="email" class="input-field w-input" maxlength="256" name="Email" placeholder="" id="Email-3" required="" /></div>
+                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-e5452d4b" class="fade-in-move-on-scroll"><label for="Email-3" id="contact-email" class="field-label">Email *</label><input type="email" class="input-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email-3" required="" /></div>
                                 <div
-                                    id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-e5452d4b" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label">Message</label><textarea id="Message-3" name="Message" maxlength="5000" placeholder="" class="input-field textarea-field w-input"></textarea></div>
+                                    id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-e5452d4b" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label">Message</label><textarea id="Message-3" name="Message" maxlength="5000" data-name="Message" placeholder="" class="input-field textarea-field w-input"></textarea></div>
                             <div
-                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" name="submit" value="Send message" class="button contact-button w-button" /></div>
+                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" value="Send message" data-wait="Please wait..." class="button contact-button w-button" /></div>
                 </div>
                 </form>
-                <?php if(!empty($message)){ ?>
                 <div class="success-message w-form-done">
-                    <div><?php echo $message; ?></div>
+                    <div>Thank you! Your submission has been received!</div>
                 </div>
-                <?php } ?>
                 <div class="error-message w-form-fail">
                     <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
