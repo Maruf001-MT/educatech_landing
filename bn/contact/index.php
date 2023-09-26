@@ -93,7 +93,7 @@
         $LastName = $_POST["LastName"];
         $Email = $_POST["Email"];
         $Message = $_POST["Message"];
-        $toEmail = "marufdraft@gmail.com";
+        $toEmail = "info@prozukty.com";
 
         $mailHeaders = "Name: " . $LastName . 
         "\r\n Email: " . $Email . 
