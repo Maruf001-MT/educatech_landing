@@ -89,7 +89,7 @@
 <body>
 
 <?php
-    if(!empty($_POST["send"])){
+    if(!empty($_POST["submit"])){
         $LastName = $_POST["LastName"];
         $Email = $_POST["Email"];
         $Message = $_POST["Message"];
@@ -188,7 +188,7 @@
                                 <div
                                     id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-e5452d4b" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label">Message</label><textarea id="Message-3" name="Message" maxlength="5000" data-name="Message" placeholder="" class="input-field textarea-field w-input"></textarea></div>
                             <div
-                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" name="send" value="Send message" data-wait="Please wait..." class="button contact-button w-button" /></div>
+                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" name="submit" value="Send message" data-wait="Please wait..." class="button contact-button w-button" /></div>
                 </div>
                 </form>
                 <?php if(!empty($message)){ ?>
