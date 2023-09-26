@@ -182,13 +182,13 @@
                             <div data-w-id="01b9e3e3-333e-e152-3ec1-d3a21e6c7776" style="opacity:0;-webkit-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                                 class="contact-form-grid">
                                 <div class="top-message-text">Send us a message</div>
-                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-e5452d4b" class="fade-in-move-on-scroll"><label for="LastName" id="contact-last-name" class="field-label">Your name *</label><input type="text" class="input-field w-input" maxlength="256" name="LastName" data-name="LastName" placeholder="" id="LastName" required=""
+                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777b-e5452d4b" class="fade-in-move-on-scroll"><label for="LastName" id="contact-last-name" class="field-label">Your name *</label><input type="text" class="input-field w-input" maxlength="256" name="LastName" placeholder="" id="LastName" required=""
                                     /></div>
-                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-e5452d4b" class="fade-in-move-on-scroll"><label for="Email-3" id="contact-email" class="field-label">Email *</label><input type="email" class="input-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email-3" required="" /></div>
+                                <div id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c777f-e5452d4b" class="fade-in-move-on-scroll"><label for="Email-3" id="contact-email" class="field-label">Email *</label><input type="email" class="input-field w-input" maxlength="256" name="Email" placeholder="" id="Email-3" required="" /></div>
                                 <div
-                                    id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-e5452d4b" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label">Message</label><textarea id="Message-3" name="Message" maxlength="5000" data-name="Message" placeholder="" class="input-field textarea-field w-input"></textarea></div>
+                                    id="w-node-_01b9e3e3-333e-e152-3ec1-d3a21e6c7787-e5452d4b" class="fade-in-move-on-scroll"><label for="Message-3" id="contact-message" class="field-label">Message</label><textarea id="Message-3" name="Message" maxlength="5000" placeholder="" class="input-field textarea-field w-input"></textarea></div>
                             <div
-                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" name="submit" value="Send message" data-wait="Please wait..." class="button contact-button w-button" /></div>
+                                id="w-node-f2fb423f-7673-267c-657c-64c8bca49607-e5452d4b" class="fade-in-move-on-scroll"><input type="submit" name="submit" value="Send message" class="button contact-button w-button" /></div>
                 </div>
                 </form>
                 <?php if(!empty($message)){ ?>
